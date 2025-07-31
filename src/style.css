@@ -1,0 +1,73 @@
+.cell{
+    cursor: pointer;
+    border: 1px solid rgba(13, 125, 129, 0.8);
+    background-color: rgba(255, 255, 255, 1);
+    min-height: 4rem;
+    min-width: 4rem;
+    transition: all 0.3s;
+}
+.line{
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+}
+.battlefield-text {
+    display: inline-block;
+    user-select: none;
+    padding-left:20px;
+    width: fit-content;
+    font-size: 26px;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing:1.5rem;
+    font-weight: 600;
+    color: rgb(57,81,93);
+    box-shadow: 0px 0px 5px 5px rgb(55,99,112);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+.resetBtn{
+    margin-top: 25px;
+    width: 20vw;
+    height: 5vh;
+    font-size: 14px;
+    color: #fff;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    background-color: rgb(36, 60, 75);
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    opacity: 0.9;
+}
+
+
+.resetBtn:hover {
+    color: #fff;
+    background-color:rgb(33, 73, 88);
+    border-color: rgb(33, 69, 84);
+  }
+  
+  .resetBtn:focus{
+    color: #fff;
+    background-color:rgb(33, 73, 88);
+    border-color: rgb(33, 69, 84);
+    box-shadow: 0 0 0 0 rgb(142, 191, 243);
+  }
+
+  .resetBtn.disabled, .resetBtn:disabled {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+  }
+
+
+@media (max-width: 755px) {
+    .cell{
+    
+        min-height: 3rem;
+        min-width: 3rem; 
+        transition: all 0.3s;
+    }
+}
